@@ -1,0 +1,2 @@
+lisp-test 1.0 prints a greeting and echoes its arguments
+hello 0.2 the classic hello, echoes arguments
