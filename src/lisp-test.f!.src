@@ -1,0 +1,10 @@
+echo "hello from a pls package"
+echo "installed with pls install"
+if [ -z "$1" ]; then
+    echo "no arguments were passed"
+else
+    echo "arguments:"
+    for a in "$@"; do
+        echo "  $a"
+    done
+fi

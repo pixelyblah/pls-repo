@@ -1,0 +1,9 @@
+echo "hello"
+if [ -z "$1" ]; then
+    echo "no arguments"
+else
+    echo "arguments:"
+    for a in "$@"; do
+        echo "  $a"
+    done
+fi
