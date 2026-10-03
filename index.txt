@@ -1,2 +1,3 @@
+acme 1.0.0 the F12 text editor, built in, this is its reference
 hello 1.0.0 the classic hello, echoes its arguments
 lisp-test 1.0.0 prints a greeting and echoes its arguments

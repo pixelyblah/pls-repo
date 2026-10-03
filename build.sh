@@ -44,7 +44,18 @@ $MKPKG --name lisp-test --version 1.0.0 \
     --file bin/lisp-test.f!=build/lisp-test.f! \
     packages/lisp-test.f12
 
+echo "building acme 1.0.0"
+$MKFEXE --name acme --version 1.0.0 \
+    --summary "the F12 text editor, built in, this is its reference" \
+    --source src/acme.f!.src build/acme.f!
+$MKPKG --name acme --version 1.0.0 \
+    --summary "the F12 text editor, built in, this is its reference" \
+    --license MIT --entry bin/acme.f! \
+    --file bin/acme.f!=build/acme.f! \
+    packages/acme.f12
+
 cat > index.txt <<'EOF'
+acme 1.0.0 the F12 text editor, built in, this is its reference
 hello 1.0.0 the classic hello, echoes its arguments
 lisp-test 1.0.0 prints a greeting and echoes its arguments
 EOF
